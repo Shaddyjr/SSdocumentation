@@ -1,23 +1,24 @@
 # **Documentation for ScholarStem's Platform**
 ![Logo](http://scholarstem.com/wp-content/uploads/2016/04/ScholarStem-Single-Blue-header-Vector.png "ScholarStem Logo")
+
 _This repo contains the Descriptions and JavaScript (as individual files) for each help section for the ScholarStem Platform._
 
 The "main.json" file contains the descriptions and file reference for each help section. Each section has subsections:
-+Drawing
+*Drawing
 ..*Circles
 ..*Rectangles
 ..*Lines
 ..*Arcs
 ..*Dots
-+Text
+*Text
 ..*Text
 ..*Fonts
 ..*Size
 ..*Style
-+Movement
+*Movement
 ..*Left and Right
 ..*Up and Down
-+Colors
+*Colors
 ..*Grayscale
 ..*RGB
 
