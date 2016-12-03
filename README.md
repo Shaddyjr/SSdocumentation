@@ -5,21 +5,21 @@ _This repo contains the Descriptions and JavaScript (as individual files) for ea
 
 The "main.json" file contains the descriptions and file reference for each help section. Each section has subsections:
 *Drawing
-..*Circles
-..*Rectangles
-..*Lines
-..*Arcs
-..*Dots
+  *Circles
+  *Rectangles
+  *Lines
+  *Arcs
+  *Dots
 *Text
-..*Text
-..*Fonts
-..*Size
-..*Style
+  *Text
+  *Fonts
+  *Size
+  *Style
 *Movement
-..*Left and Right
-..*Up and Down
+  *Left and Right
+  *Up and Down
 *Colors
-..*Grayscale
-..*RGB
+  *Grayscale
+  *RGB
 
 The .js files are the actual example code demonstrating the various subtopics.
