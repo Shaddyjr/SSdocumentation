@@ -1,62 +1,72 @@
 {
 	"Drawing":{
 		"Circles":{
-			"Description":,
+			"Description":"ellipse(X,Y,WIDTH, [HEIGHT]) creates a ellipse at X and Y with a WIDTH and optional HEIGHT. Using HEIGHT can create an oval shape, but if a HEIGHT is not provided the WIDTH is used, which creates a perfect circle.",
 			"jsURL": "js/circle.js"
 		},
 		"Rectangles":{
-			"Description":,
+			"Description":"rect(X,Y,WIDTH, HEIGHT, [ROUNDNESS]) creates a rectangle at X and Y with a WIDTH and HEIGHT with an optional ROUNDNESS. Using the same value for WIDTH and HEIGHT creates a perfect square. ROUNDNESS is the radius used to round each corner.",
 			"jsURL":"js/rectangles.js"
 		},
 		"Lines":{
-			"Description":,
+			"Description":"line(startX,startY, endX, endY) creates a line starting at startX and startY and ends at endX and endY. The thickness of the line is determined by the current strokeWeight(#), and the color is determined by the current stroke([RBG or Greyscale color]).",
 			"jsURL":"js/lines.js"
 		},
 		"Arcs":{
-			"Description":,
+			"Description":"arc(X,Y,WIDTH, HEIGHT, START, STOP) creates an arc and is created from a circle placed at X and Y with a WIDTH and HEIGHT. The circle is then hidden except for any part of the circle between the START and STOP. The START and STOP should have the following degree values:'0,QUARTER_PI, HALF_PI, PI'. The 0 starts out at the rightmost point on the circle (3:00 on a clock), this is 0 degrees; PI is half of a cirle, this is 180 degrees. You can also add degrees (For example: PI+HALF_PI). Creating an arc starting a 0 and ending at PI*2 does NOT create a circle; in this case, simple create a proper ellipse().",
 			"jsURL":"js/arcs.js"
 		},
 		"Dots":{
-			"Description":,
+			"Description":"point(X,Y) creates a dot at X and Y. The thickness of the dot is determined by the current strokeWeight(#), and the color is determined by the current stroke([RBG or Greyscale color]).",
 			"jsURL":"js/dots.js"
 		},
 	},
 	"Text":{
 		"Text":{
-			"Description":,
+			"Description":"text(STRING,X,Y) creates text of STRING at X and Y. The size of the text is determined by the current textSize(#).",
 			"jsURL":"js/text.js"
 		},
 		"Fonts":{
-			"Description":,
+			"Description":"textFont(FONT) sets the current font for text(). Valid values are: 'Arial','Courier New','Georgia','Times New Roman','Trebuchet MS','Verdana'.",
 			"jsURL":"js/fonts.js"
 		},
 		"Size":{
-			"Description":,
+			"Description":"textSize(NUMBER) sets the current size for text() as NUMBER pixels in height.",
 			"jsURL":"js/size.js"
 		},
 		"Style":{
-			"Description":,
+			"Description":"textStyle(STYLE) sets the current style for text(). Valid values are: 'NORMAL','ITALIC', 'BOLD'.",
 			"jsURL":"js/style.js"
 		}
 	},
 	"Movement":{
 		"LeftAndRight":{
-			"Description":,
+			"Description":"Using a variable in place of an X value allows you to move the shape with those variables left and right.",
 			"jsURL":"js/leftandright.js"
 		},
 		"UpAndDown":{
-			"Description":,
+			"Description":"Using a variable in place of a Y value allows you to move the shape with those variables up and down.",
 			"jsURL":"js/upanddown.js"
 		}
 	},
 	"Colors":{
 		"Grayscale":{
-			"Description":,
+			"Description":"When a color is needed, a single number can be used for a grayscale value (0-255 range). 0 represent black and 255 represents white; all values in between are a gray-ish blend of the two.",
 			"jsURL":"js/grayscale.js"
 		},
 		"RGB":{
-			"Description":,
+			"Description":"When a color is needed, 3 numbers can be used for a color blend of (RED,GREEN,BLUE), each having a value between 0 and 255. For each color, 0 represents none of that color being added to the blend and 255 represents all of the color being added to the blend. A value of (0,0,0) represents black and (255,255,255) represents white. All values in between are a colored blend of the three colors in the proportions given.",
 			"jsURL":"js/rgb.js"
+		},
+		"No Color":{
+			"Description":"Color can be removed by using noFill() so shapes no longer have a filled color. Using strokeWeight(0) also removes lines (by setting their width to 0).",
+			"jsURL":"js/nocolor.js"
 		}
 	},
+	"Random":{
+		"Random":{
+			"Description":"random() returns a random decimal between 0 and 1. Optionally, random(MIN) will return a random number from 0 up to, but not including, MIN. Optionally, random(MIN, MAX), will return a random number from MIN up to, but not including, MAX. Additionally, if an array is used inside of random(ARRAY), a random item from ARRAY is returned.",
+			"jsURL":"js/random.js"
+		}
+	}
 }
