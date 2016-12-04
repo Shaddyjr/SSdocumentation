@@ -28,6 +28,19 @@ The "main.json" file contains the descriptions and file reference for each help 
 
 The .js files are the actual example code demonstrating the various subtopics.
 
+The JSON is written as such:
+```javascript
+{
+ "Section":{
+     "Subsection":{
+         "Description":"Explanation of content",
+         "jsURL":"js/releventURL.js"
+     },
+     ...
+ },
+ ...
+}
+```
 All credit for p5.js and reference material goes to [Lauren McCarthy](http://lauren-mccarthy.com/) and the many collaborators on the p5 project with support from the [Processing Foundation](http://processing.org/foundation/) and [NYU ITP](http://itp.nyu.edu/itp/). [Info](https://p5js.org/copyright.html).
 
 [1]:scholarstem.com
